@@ -1,0 +1,12 @@
+text = input("Enter your name: ")
+
+print("Original:", text)
+print("Upper:", text.upper())
+print("Lower:", text.lower())
+print("Capitalized:", text.capitalize())
+print("Title:", text.title())
+print("Length:", len(text))
+print("Count of a:", text.count("a"))
+print("Replace a with @:", text.replace("a", "@"))
+print("Starts with A:", text.startswith("A"))
+print("Ends with r:", text.endswith("r"))

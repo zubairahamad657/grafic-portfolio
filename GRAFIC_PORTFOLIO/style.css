@@ -1,0 +1,215 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+}
+
+/* Navbar */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#111827;
+    z-index:1000;
+}
+
+.logo{
+    color:#ff9800;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#ff9800;
+}
+
+.btn{
+    text-decoration:none;
+    color:white;
+    background:#ff9800;
+    padding:12px 25px;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#ff6600;
+}
+
+/* Hero */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding-top:120px;
+}
+
+.hero-image{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    border:6px solid #ff9800;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#1e293b;
+    margin-bottom:35px;
+    font-size:30px;
+    color:#ff9800;
+}
+
+.hero-text h1{
+    font-size:60px;
+    color:#ff9800;
+}
+
+.hero-text h2{
+    margin:15px 0;
+}
+
+.hero-text p{
+    max-width:650px;
+    line-height:1.8;
+    margin:20px auto;
+}
+
+/* Sections */
+
+section{
+    padding:100px 10%;
+}
+
+section h2{
+    text-align:center;
+    color:#ff9800;
+    margin-bottom:30px;
+}
+
+/* About */
+
+.about p{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+}
+
+.about-boxes{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+.box{
+    width:220px;
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+}
+
+/* Portfolio */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1e293b;
+    height:180px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:15px;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border:2px solid #ff9800;
+}
+
+/* Services */
+
+.services ul{
+    max-width:500px;
+    margin:auto;
+    line-height:2;
+    font-size:20px;
+}
+
+/* Contact */
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+/* Footer */
+
+footer{
+    background:#111827;
+    text-align:center;
+    padding:20px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+}
+
+.nav-links{
+    margin:15px 0;
+}
+
+.hero-text h1{
+    font-size:42px;
+}
+
+.hero-image{
+    width:180px;
+    height:180px;
+}
+
+}

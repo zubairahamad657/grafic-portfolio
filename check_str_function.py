@@ -1,0 +1,17 @@
+x = input("enter your name:")
+
+print (len(x))
+print (x)
+print (x.upper())
+print (x.lower())
+print (x.capitalize())
+print (x.title())
+print (x.replace("a","@"))
+print (x.split())
+print (x.join("z"))
+print (x.strip())
+print (x.find("r"))
+print (x.count("z"))
+print (x.startswith("z"))
+print (x.endswith("x"))
+
